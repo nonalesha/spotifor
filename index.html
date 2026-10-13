@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#120e10">
+  <title>Spotifor — A Little Playlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true"><span>♫</span></div>
+      <div class="brand-copy"><span class="eyebrow">A LITTLE CORNER FOR YOU</span><strong id="brandName">Spotifor Ibra</strong></div>
+      <button class="icon-button" id="editToggle" aria-label="Edit website" title="Edit website">✎</button>
+    </header>
+
+    <main id="homePage" class="page active">
+      <section class="welcome">
+        <p class="eyebrow green">CURATED WITH LOVE</p>
+        <h1 id="welcomeTitle">A playlist made<br>just for <span class="accent" id="recipientName">Ibra</span>.</h1>
+        <p id="welcomeText" class="muted">A little collection of songs that remind me of us.</p>
+      </section>
+
+      <button class="featured-card" data-page="playlistPage">
+        <img id="heroPhoto" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=240&q=80" alt="Featured memory">
+        <span class="feature-copy"><span class="eyebrow green">MADE JUST FOR YOU</span><strong id="featureTitle">Dedicated For You</strong><small id="featureDescription">A little collection of songs that remind me of us.</small></span>
+        <span class="chevron">›</span>
+      </button>
+
+      <section class="tile-grid">
+        <button class="tile" data-page="playlistPage"><span class="tile-icon">♫</span><strong>Our Little Playlist</strong><small>Songs that somehow became about us</small></button>
+        <button class="tile" data-page="storiesPage"><span class="tile-icon">▥</span><strong>Behind The Songs</strong><small>The little stories behind each song</small></button>
+        <button class="tile" data-page="galleryPage"><span class="tile-icon">▣</span><strong>Little Moments</strong><small>A few memories I never want to forget</small></button>
+        <button class="tile" data-page="notesPage"><span class="tile-icon">✉</span><strong>A Little Something</strong><small>Words I wanted you to have</small></button>
+      </section>
+    </main>
+
+    <main id="playlistPage" class="page">
+      <div class="page-heading"><button class="back-button" data-page="homePage">‹</button><div><p class="eyebrow">OUR LITTLE PLAYLIST</p><h1>Dedicated For You</h1></div></div>
+      <div class="playlist-hero">
+        <img id="playlistPhoto" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Playlist cover">
+        <div><h2 id="playlistTitle">Dedicated For You</h2><p id="playlistSubtitle">Made with too many thoughts about you.</p></div>
+      </div>
+      <div class="track-list" id="trackList">
+        <button class="track" data-track="0"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" alt=""><span><strong>Adore You</strong><small>Harry Styles</small></span><span class="play-mini">▶</span></button>
+        <button class="track" data-track="1"><img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=100&q=80" alt=""><span><strong>I Like Me Better</strong><small>Lauv</small></span><span class="play-mini">▶</span></button>
+        <button class="track" data-track="2"><img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=100&q=80" alt=""><span><strong>Best Part</strong><small>Daniel Caesar, H.E.R.</small></span><span class="play-mini">▶</span></button>
+      </div>
+    </main>
+
+    <main id="storiesPage" class="page">
+      <div class="page-heading"><button class="back-button" data-page="homePage">‹</button><div><p class="eyebrow">THE LITTLE STORIES</p><h1>Behind The Songs</h1></div></div>
+      <div class="story-list">
+        <button class="story-item" data-story="0"><span class="eyebrow green">SONG #1</span><strong>A Song That Reminds Me How Much I Adore You</strong><span>›</span></button>
+        <button class="story-item" data-story="1"><span class="eyebrow green">SONG #2</span><strong>I Like The Person I Am Around You</strong><span>›</span></button>
+        <button class="story-item" data-story="2"><span class="eyebrow green">SONG #3</span><strong>One Of My Favorite Parts Is You</strong><span>›</span></button>
+      </div>
+      <article class="story-detail hidden" id="storyDetail"><p class="eyebrow green">A NOTE FROM ME</p><h2 id="storyTitle"></h2><img id="storyPhoto" src="" alt="A memory"><p id="storyText"></p></article>
+    </main>
+
+    <main id="galleryPage" class="page">
+      <div class="page-heading"><button class="back-button" data-page="homePage">‹</button><div><p class="eyebrow">THE MOMENTS I KEEP</p><h1>Little Moments</h1></div></div>
+      <p class="muted intro">A few pictures, a few things about you, and all the little details I somehow always notice.</p>
+      <div class="gallery-grid" id="galleryGrid">
+        <button class="memory-card"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="A little memory"><strong>The Smile I Love Seeing</strong></button>
+        <button class="memory-card"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=400&q=80" alt="A little memory"><strong>The Little Things You Do</strong></button>
+        <button class="memory-card"><img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=400&q=80" alt="A little memory"><strong>A Side Of You I Love</strong></button>
+        <button class="memory-card"><img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=400&q=80" alt="A little memory"><strong>Why I'm Glad It's You</strong></button>
+      </div>
+    </main>
+
+    <main id="notesPage" class="page">
+      <div class="page-heading"><button class="back-button" data-page="homePage">‹</button><div><p class="eyebrow">SOMETHING FROM ME</p><h1>A Little Something</h1></div></div>
+      <p class="muted intro">I wrote these for different kinds of days. Whenever you need a little reminder of how I feel about you, just open one.</p>
+      <div class="note-list">
+        <button class="note-item"><span>▣</span><strong>I Hope You Know How Much I Appreciate You</strong><small>A little note waiting for you</small><b>›</b><p class="note-body">You make ordinary moments feel special. Thank you for being exactly who you are, and for making my world a little brighter.</p></button>
+        <button class="note-item"><span>▣</span><strong>For The Days You Feel Tired</strong><small>A little reminder</small><b>›</b><p class="note-body">You don't have to have everything figured out today. Rest when you need to. I'm proud of you, even on the quiet days.</p></button>
+        <button class="note-item"><span>▣</span><strong>The Future I Quietly Hope For</strong><small>A little wish for us</small><b>›</b><p class="note-body">I hope we get to collect more little moments, laugh about silly things, and keep choosing kindness with each other.</p></button>
+      </div>
+    </main>
+
+    <section class="player-bar" id="playerBar">
+      <button class="now-playing" id="openPlayer"><img id="miniCover" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" alt=""><span><strong id="miniTitle">Adore You</strong><small id="miniArtist">Harry Styles</small></span></button>
+      <button class="heart-button" id="favoriteButton" aria-label="Favorite">♡</button>
+      <button class="play-button" id="playButton" aria-label="Play">▶</button>
+    </section>
+
+    <section class="player-page hidden" id="fullPlayer">
+      <div class="player-top"><button class="back-button" id="closePlayer">⌄</button><span class="eyebrow">PLAYING FROM PLAYLIST</span><button class="icon-button" id="playerMenu">•••</button></div>
+      <img class="album-art" id="albumArt" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=85" alt="Album cover">
+      <div class="track-heading"><div><h1 id="fullTitle">Adore You</h1><p id="fullArtist">Harry Styles</p></div><button class="heart-button large" id="fullFavorite">♡</button></div>
+      <div class="progress-area"><input id="seekBar" type="range" min="0" max="100" value="0" aria-label="Seek song"><div class="time-row"><span id="currentTime">0:00</span><span id="duration">0:00</span></div></div>
+      <div class="controls"><button id="shuffleButton" aria-label="Shuffle">⤨</button><button id="previousButton" aria-label="Previous">|◀</button><button class="main-play" id="mainPlayButton" aria-label="Play">▶</button><button id="nextButton" aria-label="Next">▶|</button><button id="repeatButton" aria-label="Repeat">↻</button></div>
+      <div class="quote-card"><p class="eyebrow">WORDS THAT FEEL LIKE US</p><h2 id="quoteTitle">I'll walk through fire for you.</h2><p id="quoteText">I think this song feels like the simplest way of saying how much you mean to me.</p></div>
+      <audio id="audio" preload="metadata"></audio>
+    </section>
+
+    <nav class="bottom-nav" id="bottomNav">
+      <button class="nav-item active" data-page="homePage"><span>⌂</span>Home</button>
+      <button class="nav-item" data-page="storiesPage"><span>▥</span>Stories</button>
+      <button class="nav-item" data-page="galleryPage"><span>▣</span>Galeri</button>
+      <button class="nav-item" data-page="notesPage"><span>✉</span>Surat</button>
+    </nav>
+  </div>
+
+  <dialog id="editorDialog" class="editor-dialog">
+    <form id="editorForm">
+      <div class="editor-head"><div><p class="eyebrow green">MAKE IT YOURS</p><h2>Edit your page</h2></div><button type="button" class="icon-button" id="closeEditor">✕</button></div>
+      <label>Nama penerima<input id="editName" type="text" placeholder="Ibra"></label>
+      <label>Nama website<input id="editBrand" type="text" placeholder="Spotifor Ibra"></label>
+      <label>Judul playlist<input id="editPlaylist" type="text" placeholder="Dedicated For You"></label>
+      <label>Teks pembuka<textarea id="editWelcome" rows="2"></textarea></label>
+      <label>Catatan lagu<textarea id="editQuote" rows="3"></textarea></label>
+      <label>Foto utama<input id="editPhoto" type="file" accept="image/*"></label>
+      <label>Foto galeri tambahan<input id="editGallery" type="file" accept="image/*" multiple></label>
+      <div class="editor-divider"></div>
+      <h3>Musik</h3>
+      <p class="muted tiny">Unggah file audio milikmu agar lagu bisa diputar penuh. Browser tidak dapat mengambil lagu penuh dari Spotify hanya dengan judul.</p>
+      <label>File lagu (MP3, M4A, OGG, WAV)<input id="editSong" type="file" accept="audio/*"></label>
+      <label>Judul lagu<input id="editSongTitle" type="text" placeholder="Adore You"></label>
+      <label>Nama penyanyi<input id="editArtist" type="text" placeholder="Harry Styles"></label>
+      <div class="editor-actions"><button type="button" class="secondary-button" id="resetButton">Reset contoh</button><button type="submit" class="save-button">Simpan perubahan</button></div>
+    </form>
+  </dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
